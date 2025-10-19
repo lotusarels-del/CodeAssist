@@ -20,11 +20,11 @@ jobs:
       - uses: actions/checkout@v4
 
       # Set up JDK 25 (latest)
-      - name: Set up JDK 11
+      - name: Set up JDK 25
         uses: actions/setup-java@v2
         with:
-          java-version: '11'
-          distribution: 'adopt'
+          java-version: '25'
+          distribution: 'zulu'
           cache: gradle
 
       # Grant execute permission for gradlew
